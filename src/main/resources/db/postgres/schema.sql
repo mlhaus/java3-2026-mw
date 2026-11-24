@@ -1,13 +1,14 @@
 CREATE TABLE IF NOT EXISTS league (
           league_id SERIAL PRIMARY KEY,
           name VARCHAR(50) NOT NULL UNIQUE,
-abbreviation VARCHAR(10) NOT NULL UNIQUE
+          abbreviation VARCHAR(10) NOT NULL UNIQUE
 );
 
 CREATE TABLE IF NOT EXISTS brand (
          brand_id SERIAL PRIMARY KEY,
          name VARCHAR(80) NOT NULL UNIQUE
 );
+
 
 CREATE TABLE IF NOT EXISTS athlete (
            athlete_id SERIAL PRIMARY KEY,
